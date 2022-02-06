@@ -8,13 +8,18 @@ function addTodo() {
     
     todoText = todoText.text;
     
-    console.log(todoText);
     
+    
+
     const todoEl = document.createElement("li");
+
+
+
+   
+    const textnode = document.createTextNode(todoText);
+    //todoEl.innerText = todoText;
     
-    todoEl.innerText = todoText;
-    
-    todosUl.appendChild(todoEl);
+    todosUl.appendChild(textnode);
     
     input.value = "";
 }
