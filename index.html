@@ -9,16 +9,16 @@
     </head>
     <body>
         <h1>todos</h1>
-        <form id="form">
+        <form id="form" onsubmit="lsSetItem()">
             <input 
             type="text"
             id="input"
             class="input" 
             placeholder="Enter your todo" 
-            autocomplete="off">
+            autocomplete="off"
+            >
 
             <ul id="todos">
-                <li>this is todo</li>
             </ul> 
 
         </form>
